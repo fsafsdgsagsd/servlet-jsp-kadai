@@ -30,7 +30,7 @@ public class ConfirmServlet extends HttpServlet {
         request.setAttribute( "phone_number", phone_number);
 
         // フォワードによる画面遷移
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/pages/confirmPage.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/pages/confirmPage.jsp");
         dispatcher.forward(request, response);
     }
 }

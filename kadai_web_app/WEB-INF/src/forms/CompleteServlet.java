@@ -13,7 +13,7 @@ public class CompleteServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
         // フォワードによる画面遷移
-    	 RequestDispatcher dispatcher = request.getRequestDispatcher("/pages/completePage.jsp");
+    	 RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/pages/completePage.jsp");
         dispatcher.forward(request, response);
     }
 }

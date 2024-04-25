@@ -13,7 +13,7 @@ public class FormServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
         // フォワードによる画面遷移
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/pages/formPage.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/pages/formPage.jsp");
         dispatcher.forward(request, response);
     }
 }
